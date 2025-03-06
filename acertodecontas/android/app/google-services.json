@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "595359132281",
+    "firebase_url": "https://trabalho-bi-default-rtdb.firebaseio.com",
+    "project_id": "trabalho-bi",
+    "storage_bucket": "trabalho-bi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595359132281:android:7881df6176cd8e0b2882a8",
+        "android_client_info": {
+          "package_name": "br.dev.adatech.acertodecontas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595359132281-vl9dtgal58n1sdqu538vg16pim2mlb9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaJa4i525Hh2LMW6KNZ9Y2_CeKvA-MUEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595359132281-vl9dtgal58n1sdqu538vg16pim2mlb9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
