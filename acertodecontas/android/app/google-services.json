@@ -8,14 +8,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:595359132281:android:7881df6176cd8e0b2882a8",
+        "mobilesdk_app_id": "1:595359132281:android:a90e670bb317b00a2882a8",
         "android_client_info": {
-          "package_name": "br.dev.adatech.acertodecontas"
+          "package_name": "br.adatech.acertodecontas"
         }
       },
       "oauth_client": [
         {
-          "client_id": "595359132281-vl9dtgal58n1sdqu538vg16pim2mlb9g.apps.googleusercontent.com",
+          "client_id": "595359132281-hv91kl8cie4svdjq6vntsblhklfviqd4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -28,7 +28,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "595359132281-vl9dtgal58n1sdqu538vg16pim2mlb9g.apps.googleusercontent.com",
+              "client_id": "595359132281-hv91kl8cie4svdjq6vntsblhklfviqd4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

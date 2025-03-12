@@ -1,7 +1,10 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../providers/auth_provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -24,8 +27,7 @@ class LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    // final autenticar = Provider.of<AuthProvider>(context, listen: false);
-    // final user = Provider.of<UserProvider>(context, listen: false);
+      final authProvider = Provider.of<AuthProvider>(context);
     return Scaffold(
       body: Form(
         key: _formKey,
@@ -101,11 +103,25 @@ class LoginPageState extends State<LoginPage> {
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 onPressed: () async {
-                  if (_formKey.currentState!.validate()) {}
+                  if (_formKey.currentState!.validate()) {
+                     await authProvider.signIn(
+                  emailController.text,
+                  senhaController.text,
+                );
+                  }
                 },
                 label: const Text('Login'),
                 icon: const Icon(Icons.login),
-              )
+              ),
+              TextButton(
+              onPressed: () async {
+                await authProvider.signUp(
+                  emailController.text,
+                  senhaController.text,
+                );
+              },
+              child: Text("Criar Conta"),
+            ),
             ],
           ),
         ),
